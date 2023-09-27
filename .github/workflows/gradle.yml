@@ -42,7 +42,7 @@ jobs:
       with:
         username: ubuntu
         host: ${{ secrets.HOST }}
-        key: C:\Users\haulq\OneDrive\바탕 화면\기프\qogustj-key.pem
+        key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         source: "./scripts/deploy.sh"
         target: "/home/ubuntu/"
@@ -61,8 +61,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         username: ubuntu
-        host: ${{ secrets.AWS_HOST }}
-        key: ${{ secrets.AWS_KEY }}
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.KEY }}
         script: |
           sudo docker pull ${{ secrets.DOCKER_REPO }}/${{ secrets.DOCKER_IMAGE }}
           chmod 777 ./scripts/deploy.sh
