@@ -27,7 +27,7 @@ jobs:
         cd ./src/main
         cd ./resources
         touch ./application.yml
-        echo "$APPLICATION" > ./application.yml
+        echo "$DATABASE" > ./application.yml
       env:
         APPLICATION: ${{ secrets.APPLICATION }}
     
