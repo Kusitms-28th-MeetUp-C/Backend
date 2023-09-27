@@ -25,6 +25,7 @@ jobs:
     - name: 🍃 application.yml 파일을 생성합니다.
       run: |
         cd ..
+        cd ..
         cd ./src/main
         cd ./resources
         touch ./application.yml
