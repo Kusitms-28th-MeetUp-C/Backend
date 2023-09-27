@@ -41,9 +41,9 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         username: ubuntu
-        host: ec2-3-39-17-213.ap-northeast-2.compute.amazonaws.com
-        key: MIIEowIBAAKCAQEA6dGGc8RU+H/lnBub6Q0m7DlNS3I/98S1c7YpF8kDZPEHgIHIpQ7bNSqA2jCYVpakmiUCln5id1Tzzd770/2BlliOkq0ryUvLk2SpmWUTBUxZj8DRRIBPMi3uVk8GFD8V0lJphhJidUkrSTn/hK9f5/ihRXMm628O6smInEDzEDaIWyUL8LWJXlqykjnmDt7OFV+rqr7kN10QA0SyMprC2j2kkpKw/h3LXgAw1/eeZmoU/boqR0G99geynVoHgb/bCnSgQChpzX3BX+Vcm32kpuYIvRmjPGGi2J+JkXNjNKvGgqT3ltOoytBUYw74yId1mRf+nUnXT+/RLzrYdbeJQIDAQABAoIBAHkpAarribxbSffitp/FGO4/ozX9NfiGDiCvvAt/NisQWvrURcyCLkUWiT6G/melhzqILUrOIrtkoiTi5sGOihWK0sGQTJF/G+cMeYy4fBU5/P9znLYqjEua9p9iIDlT8F0wwmebTape6yuSSHQXrottCPwz7IgEnLHi+qsHUfAfIlvlqOJ/WRmhcyJPIymOxgqlltGHkZGqVMzi4R/gWv8WQyxAH+hP0DwDms1uIKUmUyaODdBxR2OfuTKOx9AaSGfe/Jn+w5pmYtFMd3qf4A4sg3v8HfOuVh082ZhNulkg5wIvuudj8yTrG3PTWvBUujZe/GTEHJ7m6AZH5QzywECgYEA/745Vrz49FwpIrh3yFA7PlPr6kvqalKO5/xZoa4bmbp/C/mYlnlPPECVyTzIw2QIr6GdbXrTtXdiqszNI1PLaom15KzGlISCP09jVBdwz+pvHga0ee7GNjXpPu8CjuCb8B94WSCyyE24OUGvMVCkKBBP962QxhlKSn+KlfBvDb0CgYEA6g2pjSKa3SWfyP90fBPb69RRXUMnA3lnlV15i6ofHDfi68neZ3xAJhDwNW1jTZD/192f0ZqFI+fsKW5dVNRbcYXs+cOwBHEY3PXgkAsNbApGslv2PomPZpXz+0r/K2TN9QQIGoZsZ4XmYJqzAL4/q7EtO0xjoN9s8Mrs9eo1IkCgYEAgsHbx0FveGD2l04B0GVVJRT7dhvCiwITFwGrQkMm0X7NHm5LWgREQuYyr2VosJ4g4subFjLKs+mKhRGZgQqC4sHuQjEkhyMJBR2uB3zErUmL7qo29HDk3yrJSughQrQMhsVQXyGcx1UVcBDpZil5BRLyEAyqDN85YMW9MdRws3ECgYAPBzGLzl0DNhc8YKqyIav4D9m4C/vzSTElKXeYgAZxdw3jeiues3V2BFDVYON3XbSgAREquuq0x0QJo5p03hSsZ7u94WghDQL/H8EGq/gqulTpU2XLGMS7z90zjJb2cm6xdvxSGH3t2ajKQoV48/fo4m/e7hvweqDnmfCEa6R7gQKBgHMOd+yQrHC9MO0Hmy/ku9oYWF/E5fONXJa/DibYQphMM5vn9V2QyJSt3sgzlaaJSuclGQ0BsEjXjJ1BbX0Y9YNIn2/A459TLvxoBPm+3aXIb83tQ6AhslIwqlzxeU3jZOr3OtKWazVI8gGTJh8FmQ7GPbsrY9NZ/hDnvY1XA9VN
-        port: 22
+        host: ${{ secrets.HOST }}
+        key: C:\Users\haulq\OneDrive\바탕 화면\기프\qogustj-key.pem
+        port: ${{ secrets.PORT }}
         source: "./scripts/deploy.sh"
         target: "/home/ubuntu/"
         
@@ -51,9 +51,9 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         username: ubuntu
-        host: ec2-3-39-17-213.ap-northeast-2.compute.amazonaws.com
-        key: MIIEowIBAAKCAQEA6dGGc8RU+H/lnBub6Q0m7DlNS3I/98S1c7YpF8kDZPEHgIHIpQ7bNSqA2jCYVpakmiUCln5id1Tzzd770/2BlliOkq0ryUvLk2SpmWUTBUxZj8DRRIBPMi3uVk8GFD8V0lJphhJidUkrSTn/hK9f5/ihRXMm628O6smInEDzEDaIWyUL8LWJXlqykjnmDt7OFV+rqr7kN10QA0SyMprC2j2kkpKw/h3LXgAw1/eeZmoU/boqR0G99geynVoHgb/bCnSgQChpzX3BX+Vcm32kpuYIvRmjPGGi2J+JkXNjNKvGgqT3ltOoytBUYw74yId1mRf+nUnXT+/RLzrYdbeJQIDAQABAoIBAHkpAarribxbSffitp/FGO4/ozX9NfiGDiCvvAt/NisQWvrURcyCLkUWiT6G/melhzqILUrOIrtkoiTi5sGOihWK0sGQTJF/G+cMeYy4fBU5/P9znLYqjEua9p9iIDlT8F0wwmebTape6yuSSHQXrottCPwz7IgEnLHi+qsHUfAfIlvlqOJ/WRmhcyJPIymOxgqlltGHkZGqVMzi4R/gWv8WQyxAH+hP0DwDms1uIKUmUyaODdBxR2OfuTKOx9AaSGfe/Jn+w5pmYtFMd3qf4A4sg3v8HfOuVh082ZhNulkg5wIvuudj8yTrG3PTWvBUujZe/GTEHJ7m6AZH5QzywECgYEA/745Vrz49FwpIrh3yFA7PlPr6kvqalKO5/xZoa4bmbp/C/mYlnlPPECVyTzIw2QIr6GdbXrTtXdiqszNI1PLaom15KzGlISCP09jVBdwz+pvHga0ee7GNjXpPu8CjuCb8B94WSCyyE24OUGvMVCkKBBP962QxhlKSn+KlfBvDb0CgYEA6g2pjSKa3SWfyP90fBPb69RRXUMnA3lnlV15i6ofHDfi68neZ3xAJhDwNW1jTZD/192f0ZqFI+fsKW5dVNRbcYXs+cOwBHEY3PXgkAsNbApGslv2PomPZpXz+0r/K2TN9QQIGoZsZ4XmYJqzAL4/q7EtO0xjoN9s8Mrs9eo1IkCgYEAgsHbx0FveGD2l04B0GVVJRT7dhvCiwITFwGrQkMm0X7NHm5LWgREQuYyr2VosJ4g4subFjLKs+mKhRGZgQqC4sHuQjEkhyMJBR2uB3zErUmL7qo29HDk3yrJSughQrQMhsVQXyGcx1UVcBDpZil5BRLyEAyqDN85YMW9MdRws3ECgYAPBzGLzl0DNhc8YKqyIav4D9m4C/vzSTElKXeYgAZxdw3jeiues3V2BFDVYON3XbSgAREquuq0x0QJo5p03hSsZ7u94WghDQL/H8EGq/gqulTpU2XLGMS7z90zjJb2cm6xdvxSGH3t2ajKQoV48/fo4m/e7hvweqDnmfCEa6R7gQKBgHMOd+yQrHC9MO0Hmy/ku9oYWF/E5fONXJa/DibYQphMM5vn9V2QyJSt3sgzlaaJSuclGQ0BsEjXjJ1BbX0Y9YNIn2/A459TLvxoBPm+3aXIb83tQ6AhslIwqlzxeU3jZOr3OtKWazVI8gGTJh8FmQ7GPbsrY9NZ/hDnvY1XA9VN
-        port: 22
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
         source: "./docker-compose.yml"
         target: "/home/ubuntu/"
         
@@ -61,10 +61,10 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         username: ubuntu
-        host: ec2-3-39-17-213.ap-northeast-2.compute.amazonaws.com
-        key: MIIEowIBAAKCAQEA6dGGc8RU+H/lnBub6Q0m7DlNS3I/98S1c7YpF8kDZPEHgIHIpQ7bNSqA2jCYVpakmiUCln5id1Tzzd770/2BlliOkq0ryUvLk2SpmWUTBUxZj8DRRIBPMi3uVk8GFD8V0lJphhJidUkrSTn/hK9f5/ihRXMm628O6smInEDzEDaIWyUL8LWJXlqykjnmDt7OFV+rqr7kN10QA0SyMprC2j2kkpKw/h3LXgAw1/eeZmoU/boqR0G99geynVoHgb/bCnSgQChpzX3BX+Vcm32kpuYIvRmjPGGi2J+JkXNjNKvGgqT3ltOoytBUYw74yId1mRf+nUnXT+/RLzrYdbeJQIDAQABAoIBAHkpAarribxbSffitp/FGO4/ozX9NfiGDiCvvAt/NisQWvrURcyCLkUWiT6G/melhzqILUrOIrtkoiTi5sGOihWK0sGQTJF/G+cMeYy4fBU5/P9znLYqjEua9p9iIDlT8F0wwmebTape6yuSSHQXrottCPwz7IgEnLHi+qsHUfAfIlvlqOJ/WRmhcyJPIymOxgqlltGHkZGqVMzi4R/gWv8WQyxAH+hP0DwDms1uIKUmUyaODdBxR2OfuTKOx9AaSGfe/Jn+w5pmYtFMd3qf4A4sg3v8HfOuVh082ZhNulkg5wIvuudj8yTrG3PTWvBUujZe/GTEHJ7m6AZH5QzywECgYEA/745Vrz49FwpIrh3yFA7PlPr6kvqalKO5/xZoa4bmbp/C/mYlnlPPECVyTzIw2QIr6GdbXrTtXdiqszNI1PLaom15KzGlISCP09jVBdwz+pvHga0ee7GNjXpPu8CjuCb8B94WSCyyE24OUGvMVCkKBBP962QxhlKSn+KlfBvDb0CgYEA6g2pjSKa3SWfyP90fBPb69RRXUMnA3lnlV15i6ofHDfi68neZ3xAJhDwNW1jTZD/192f0ZqFI+fsKW5dVNRbcYXs+cOwBHEY3PXgkAsNbApGslv2PomPZpXz+0r/K2TN9QQIGoZsZ4XmYJqzAL4/q7EtO0xjoN9s8Mrs9eo1IkCgYEAgsHbx0FveGD2l04B0GVVJRT7dhvCiwITFwGrQkMm0X7NHm5LWgREQuYyr2VosJ4g4subFjLKs+mKhRGZgQqC4sHuQjEkhyMJBR2uB3zErUmL7qo29HDk3yrJSughQrQMhsVQXyGcx1UVcBDpZil5BRLyEAyqDN85YMW9MdRws3ECgYAPBzGLzl0DNhc8YKqyIav4D9m4C/vzSTElKXeYgAZxdw3jeiues3V2BFDVYON3XbSgAREquuq0x0QJo5p03hSsZ7u94WghDQL/H8EGq/gqulTpU2XLGMS7z90zjJb2cm6xdvxSGH3t2ajKQoV48/fo4m/e7hvweqDnmfCEa6R7gQKBgHMOd+yQrHC9MO0Hmy/ku9oYWF/E5fONXJa/DibYQphMM5vn9V2QyJSt3sgzlaaJSuclGQ0BsEjXjJ1BbX0Y9YNIn2/A459TLvxoBPm+3aXIb83tQ6AhslIwqlzxeU3jZOr3OtKWazVI8gGTJh8FmQ7GPbsrY9NZ/hDnvY1XA9VN
+        host: ${{ secrets.AWS_HOST }}
+        key: ${{ secrets.AWS_KEY }}
         script: |
-          sudo docker pull haul123/qogustj:latest
+          sudo docker pull ${{ secrets.DOCKER_REPO }}/${{ secrets.DOCKER_IMAGE }}
           chmod 777 ./scripts/deploy.sh
           cp ./scripts/deploy.sh ./deploy.sh
           ./deploy.sh
