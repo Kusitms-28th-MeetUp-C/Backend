@@ -1,9 +1,6 @@
 #!/bin/bash
-
 IS_GREEN_EXIST=$(docker ps | grep green)
 DEFAULT_CONF=" /etc/nginx/nginx.conf"
-
-# blue가 실행 중이면 green을 up합니다.
 if [ -z $IS_GREEN_EXIST ];then
   echo "### BLUE => GREEN ####"
   echo ">>> green image를 pull합니다."
@@ -25,7 +22,6 @@ if [ -z $IS_GREEN_EXIST ];then
   sudo nginx -s reload
   echo ">>> blue container를 down합니다."
   docker-compose stop blue
-
 # green이 실행 중이면 blue를 up합니다.
 else
   echo "### GREEN => BLUE ###"
