@@ -45,3 +45,4 @@ else
   echo ">>> green container를 down합니다."
   docker-compose stop green
 fi
+#cicd
