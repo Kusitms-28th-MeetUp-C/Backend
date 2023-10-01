@@ -1,4 +1,4 @@
-name: meetup Server CI/CD with Docker
+name: meetup Server CI/CD with Docker.
 
 on:
   push:
