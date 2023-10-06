@@ -1,3 +1,4 @@
+#ci/cd
 version: '3'
 services:
   blue:
