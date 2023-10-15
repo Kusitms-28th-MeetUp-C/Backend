@@ -130,7 +130,7 @@
 <table style='border: 0'>
   <tr>
     <td>
-      <img src="https://github.com/Kusitms-28th-MeetUp-C/Backend/assets/97783148/ade74642-5087-4053-91e6-ce1d82c8fa1b" width="300" height="300" />
+      <img src="https://github.com/Kusitms-28th-MeetUp-C/Backend/assets/97783148/ade74642-5087-4053-91e6-ce1d82c8fa1b" width="4000" height="400" />
     </td>
     <td>
       <div style="width:10">
