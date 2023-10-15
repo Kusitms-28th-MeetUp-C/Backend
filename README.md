@@ -247,7 +247,7 @@
 
 또한 밋플 서비스 내에서도 팀 스페이스를 생성하며, 팀 내 현황을 관리&확인을 통한 효율 향상에 중점을 둔다는 점이 협업툴과 유사하여 유사 서비스로 선정하였습니다.
 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 밋플&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 노션 | 지라&nbsp;&nbsp; | 네이버 웍스 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 밋플&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 노션 | 지라&nbsp;&nbsp;&nbsp;&nbsp; | 네이버 웍스 |
 | --- | --- | --- | --- | --- |
 | 서비스 소개 | 효율적인 회의를 위해 문제점을 개선하고<br/> 솔루션을 도출하는 서비스 | 회의에서의 효율적인<br/> 협업을 위한 서비스 | 팀 내 문제를 발견하는<br/> 프로젝트 관리서비스 | 업무용 협업 도구로 솔루션 연계를 통한<br/> 커스터마이징을 지원하는 서비스 |
 | 제공 기능 | 1) 대시보드,<br/> 2) 문제점과 해결책 도출,<br/> 3) 실시간 회의록 | 1) 공동 작업 및 협업,<br/> 2) 템플릿 생성,<br/> 2)문서 작성 | 1) 이슈 추적,<br/> 2) 칸반 보드,<br/> 2) 프로젝트 생성 | 1) 솔루션 연계,<br/> 2) 팀 내 소통,<br/> 3) 업무 관리 |
